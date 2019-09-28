@@ -4,8 +4,8 @@ python:
 services:
  - docker
 install:
- - docker build . -t mrjin/openresty:base
+ - docker build . -t mrjin/openresty:base-no-6
 script:
  - docker ps
  - docker login -u $user -p $password
- - docker push mrjin/openresty:base
+ - docker push mrjin/openresty:base-no-6
