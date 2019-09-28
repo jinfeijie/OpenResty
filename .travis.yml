@@ -6,7 +6,7 @@ services:
 install:
  - docker build . -t mrjin/openresty:google-proxy
  - docker run -d -p 80:80 --name strcpy-fly mrjin/openresty:google-proxy
- - curl 127.0.0.1:80
+ - curl --use-ascii 127.0.0.1:80
 script:
  - docker ps
  - docker login -u $user -p $password

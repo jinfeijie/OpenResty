@@ -1,4 +1,4 @@
-FROM mrjin/openresty:base
+FROM mrjin/openresty:base-no-6
 MAINTAINER Jin<cpp@strcpy.cn>
 
 # Copy nginx configuration files
