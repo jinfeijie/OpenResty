@@ -1,0 +1,11 @@
+language: python
+python:
+ - 2.7
+services:
+ - docker
+install:
+ - docker build . -t mrjin/openresty:base
+script:
+ - docker ps
+ - docker login -u $user -p $password
+ - docker push mrjin/openresty:base
