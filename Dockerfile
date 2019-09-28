@@ -1,4 +1,4 @@
-FROM daocloud.io/xss_er/nginx:openresty
+FROM mrjin/openresty:base
 MAINTAINER Jin<cpp@strcpy.cn>
 
 # Copy nginx configuration files
