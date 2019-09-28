@@ -1,4 +1,4 @@
-FROM mrjin/openresty:base-no-6
+FROM hectorqiu/nginx-google-proxy:latest
 MAINTAINER Jin<cpp@strcpy.cn>
 
 # Copy nginx configuration files

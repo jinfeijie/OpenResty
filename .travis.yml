@@ -4,10 +4,11 @@ python:
 services:
  - docker
 install:
- - docker build . -t mrjin/openresty:google-proxy
- - docker run -d -p 80:80 --name strcpy-fly mrjin/openresty:google-proxy
+ - docker build . -t mrjin/openresty:google-proxy-mini
+ - docker run -d -p 80:80 --name strcpy-fly mrjin/openresty:google-proxy-mini
+ - sleep 5;
  - curl --use-ascii 127.0.0.1:80
 script:
  - docker ps
  - docker login -u $user -p $password
- - docker push mrjin/openresty:google-proxy
+ - docker push mrjin/openresty:google-proxy-mini
